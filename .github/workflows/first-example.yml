@@ -10,10 +10,13 @@ jobs:
               uses: actions/checkout@v5
 
             - name: Welcome message
-              run: echo "My first job"
+              run: |
+                echo "My first job"
+                ls -ltra
+                cat README.md
 
-            - name: List files
-              run: ls
+            # - name: List files
+            #   run: ls
 
-            - name: read file
-              run: cat README.md
+            # - name: read file
+            #   run: cat README.md
